@@ -1,0 +1,78 @@
+/* ----- style standard pour toutes les pages ----- */
+a {
+  color: #007F5F;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* ----- style pour le header ----- */
+header {
+  border: 1px solid #007F5F;
+  background-color: #007F5F;
+  text-align: center;
+  color: #EEFE48;
+  margin-bottom: 50px;
+}
+
+nav {
+  background-color: #EEFE48;
+  padding: 10px;
+}
+
+.menu_link {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.menu_link:hover {
+  color: black;
+}
+
+/* ----- style pour les formulaires ----- */
+.field {
+  margin-bottom: 15px;
+}
+
+.button_validate {
+  color: #EEFE48;
+  background-color: #007F5F;
+  border: 1px solid #007F5F;
+  padding: 5px 10px;
+  font-weight: bold;
+  box-shadow: 5px 5px 8px grey;
+  margin-top: 30px;
+}
+
+.before_form {
+  margin-bottom: 50px;
+}
+
+/* ----- style pour la page d'accueil ----- */
+#bienvenue {
+  color: #DDDF00;
+  background-color: #007F5F;
+  padding: 3px;
+  font-weight: bold;
+}
+
+#trumpet {
+  margin-top: 40px;
+}
+
+/* un exemple de media query : 
+"max-device-width: 500px" => si la largeur maximale de l'écran est 500 pixels (si la largeur de l'écran est < à 500 pixels)
+*/
+@media screen and (max-device-width: 500px) {
+  /* le CSS qu'on place ici ne s'appliquera que dans les conditions indiquées dans la media query, donc ici si l'écran est inférieur à 500 px */
+  /* on peut écrire plusieurs blocs de CSS dans la media query, si on veut faire plusieurs modifications d'affichage */
+  .menu_link {
+    display: block;
+  }
+
+  /* la couleur des paragraphes devient bleu si largeur < 500 px */
+  p {
+    color: blue;
+  }
+}
